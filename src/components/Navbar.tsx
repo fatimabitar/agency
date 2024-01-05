@@ -20,7 +20,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
+    <nav className="flex justify-between items-center h-24 w-full mx-auto px-4 text-white">
       {/* Logo */}
       <div className="logo">
         <img src={logo} alt="" />
@@ -38,8 +38,10 @@ const Navbar = () => {
         ))}
       </ul>
 
+      <button className="btn outline-btn hidden md:block">Contact us</button>
+
       {/* Mobile Navigation Icon */}
-      <div onClick={handleNav} className="block md:hidden sm:hidden">
+      <div onClick={handleNav} className="sm:block md:hidden">
         {nav ? (
           <AiOutlineClose size={20} className="cursor-pointer" />
         ) : (
@@ -51,7 +53,7 @@ const Navbar = () => {
       <ul
         className={
           nav
-            ? "fixed md:hidden left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500"
+            ? "fixed md:hidden left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#1d1b1b] z-10 ease-in-out duration-500"
             : "ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%]"
         }
       >

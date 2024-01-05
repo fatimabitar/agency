@@ -20,10 +20,26 @@ body {
   h1 {
     @apply text-3xl;
   }
+  .main-title {
+    @apply font-bold lg:text-[72px] sm:text-[55px] md:text-[65px] text-center mb-8;
+    line-height: 72px;
+  }
+  .main-title > span {
+    @apply text-[#96ceb4];
+  }
 }
 
 @layer components {
   .container {
     @apply w-11/12 m-auto;
+  }
+  .btn {
+    @apply font-bold md:text-[18px] capitalize py-2 px-4 rounded-md transition-all sm:text-[15px];
+  }
+  .outline-btn {
+    @apply border-2 text-[#FFAD60] border-[#FFAD60] hover:text-black hover:bg-[#ffad60];
+  }
+  .primary-btn {
+    @apply bg-[#4c40f7] hover:bg-transparent border-2 border-[#4c40f7] hover:scale-110;
   }
 }
