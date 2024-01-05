@@ -3,53 +3,27 @@
 @tailwind utilities;
 
 :root {
-  --white: #fff;
-  ---black: #000;
-  --background: #302c42;
+  --main-bg: #1d1b1b;
+  --brown: #4e3a2a;
+  --blue: #4c40f7;
+  --light-blue: #96ceb4;
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
-  background: var(--background);
-  color: var(--white);
+  font-family: "Jost", sans-serif;
+  height: 100vh;
+  background: var(--main-bg);
+  color: #fff;
 }
 
 @layer base {
-  /* Scroll */
-  body::-webkit-scrollbar {
-    width: 10px;
-    scroll-behavior: smooth;
-    scrollbar-width: thin;
-    @apply rounded-full bg-gradient-to-tr from-[#C0B7E8] to-[#8176AF] text-[#302c42];
-  }
   h1 {
-    @apply text-4xl;
-  }
-  h2 {
     @apply text-3xl;
-  }
-  h3 {
-    @apply text-2xl;
   }
 }
 
 @layer components {
   .container {
     @apply w-11/12 m-auto;
-  }
-  .btn {
-    @apply px-10 py-3 rounded-3xl font-bold text-sm;
-  }
-  .linear-btn {
-    @apply bg-gradient-to-tr from-[#C0B7E8] to-[#8176AF] text-[#302c42];
-  }
-  .outline-btn {
-    border: 2px solid var(--white);
-  }
-}
-
-@layer utilities {
-  .flex-v {
-    @apply flex flex-col justify-between;
   }
 }

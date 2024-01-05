@@ -2,9 +2,9 @@ import Navbar from "../components/Navbar";
 
 const Home = () => {
   return (
-    <div className="container h-screen flex-v">
+    <section>
       <Navbar />
-    </div>
+    </section>
   );
 };
 
