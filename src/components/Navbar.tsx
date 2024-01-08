@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import logo from "../assests/logo.png";
+import { navItems } from "../data";
 
 const Navbar = () => {
   // State to manage the navbar's visibility
@@ -10,14 +11,6 @@ const Navbar = () => {
   const handleNav = () => {
     setNav(!nav);
   };
-
-  // Array containing navigation items
-  const navItems = [
-    { id: 1, text: "Home" },
-    { id: 2, text: "About" },
-    { id: 3, text: "Services" },
-    { id: 4, text: "Testimonials" },
-  ];
 
   return (
     <nav className="flex justify-between items-center h-24 w-full mx-auto px-4 text-white">

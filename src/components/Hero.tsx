@@ -3,7 +3,7 @@ import React from "react";
 const Hero = () => {
   return (
     <div className="relative">
-      <div className="w-full flex flex-col justify-center items-center mt-20 text-center">
+      <div className="w-full flex flex-col justify-center items-center mt-40 text-center">
         <h1 className="main-title">
           Make your <br /> <span>Platform</span> Perfect
         </h1>

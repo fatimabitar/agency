@@ -8,11 +8,11 @@ import shape4 from "../assests/shape4.png";
 
 const Home = () => {
   return (
-    <section className="container">
-      <img src={shape1} className="absolute lg:right-28 top-40 right-6" />
-      <img src={shape2} className="absolute lg:right-28 top-[40%] right-6" />
-      <img src={shape3} className="absolute lg:left-28 top-40 left-6" />
-      <img src={shape4} className="absolute lg:left-28 top-[40%] left-6" />
+    <section className="container mb-20">
+      <img src={shape1} className="absolute lg:right-28 top-52 right-6" />
+      <img src={shape2} className="absolute lg:right-28 top-[52%] right-6" />
+      <img src={shape3} className="absolute lg:left-28 top-52 left-6" />
+      <img src={shape4} className="absolute lg:left-28 top-[52%] left-6" />
       <Navbar />
       <Hero />
     </section>
